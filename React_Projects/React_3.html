@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>React_3</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin>
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin>
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+    body    {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation  {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="font-size:8vw;">Guernica</h1>
+    <p style="font-size:2vw;">Dream Caused by the Flight of a Bumblebee Around a Pomegranate a Second Before Awakening</p>
+    
+    <div id='JSX'>
+    <script type="text/babel">
+    class Magritte extends React.Component  {
+        render()    {
+            return <h1>Ceci n'est pas une pipe</h1>
+        }
+    }
+
+    ReactDOM.render(<Magritte />, document.getElementById('JSX'))
+</script>
+
+
+
+</body>
+</html>

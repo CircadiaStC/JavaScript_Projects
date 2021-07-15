@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="XML_Example"></p>
+<script>
+var XML_Parser, XML_Document;
+
+//creates a text string
+var Art = "<art>" +
+"<title>Olympia</title>" +
+"<artist>Edouard Manet</artist>" +
+"<medium>Oil on canvas</medium>" +
+"<year>1863</year>" +
+"</art>";
+
+//creates an XML DOM parser
+XML_Parser = new DOMParser();
+
+//creates anew XML DOM object using the text string
+XML_Document = XML_Parser.parseFromString(Art,"text/xml");
+
+document.getElementById("XML_Example").innerHTML =
+XML_Document.getElementsByTagName("artist") [0].childNodes[0].nodeValue;
+
+</script>
+
+</body>
+</html>
+
+
