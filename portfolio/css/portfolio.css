@@ -11,7 +11,7 @@ body {
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-    font-family: Avant Garde, Helvetica;
+    font-family: 'Zen Loop', serif, Helvetica;
     font-size: 1.5vw; 
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
@@ -25,11 +25,13 @@ body.fade-out {
 
 /* Heading 1 elements */
 h1 {
-    text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: bradley hand, garamond; /* Sets the font family of all h1 headings */
+    
+    font-family:  'Fuggles', cursive;
+    font-size: 400%;
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
+    
 }
 
 /* Heading 1 element hover effect */
@@ -39,21 +41,40 @@ h1:hover {
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
+h2 {
+    
+    font-family:  'Fuggles', cursive;
+    font-size: 200%;
+    text-align: center; /* Centering all h1 elements */
+    margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: #1a1a1a; 
+    
+}
+
+/* Heading 1 element hover effect */
+h2:hover {
+    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
+    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transition: transform 1s; /* This causes the transformation to last 1 second */
+}
+
+
 /* Styling for portfolio title text */
 .white-text {
-    color: #fff; /* This is used to change the color of the portfolio title text */
+    color:#AFEEEE; /* This is used to change the color of the portfolio title text */
     padding-top: 10vh; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
 }
 
 
 /* Paragraph elements */
 p {
-    font-family: "Noto Serif", Rockwell Extra Bold;
+    font-family: 'Cormorant Infant', serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: 1.5vw;
+    font-size: 1vw;
     padding-left: 1vw; /* Adds padding to the left of the paragraph element */
     padding-right: 1vw; /* Adds padding to the right of the paragraph element */
+    
 }
 
 /* Paragraph element hover effect */
@@ -75,7 +96,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: whitesmoke; /* This ensures all links are blue */
+    color:#FFD700; /* This ensures all links are blue */
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
     text-decoration: underline;
 }
@@ -144,7 +165,7 @@ footer {
     color: white; /* This is the font color for text on our navbar */
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
+    font-family:  'Zen Loop', cursive;/* This specifies the font family for text on our navbar */
     font-size: 1.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -176,7 +197,7 @@ footer {
 
 /* Navbar home button */
 .Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: #6495ED;
+    background-color:#FFD700;
 }
 /***** END OF NAVBAR STYLING *****/
 
@@ -249,7 +270,7 @@ footer {
     top: 50%; /* This moves the buttons up in the slideshow container */
     width: auto; /* The width of the buttons is automatically adjusted based on the content */
     padding: 2vw; /* Adds padding equal to 2% of the viewport width */
-    color: darkgray; 
+    color:#20B2AA; 
     font-weight: bold;
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
@@ -266,20 +287,20 @@ footer {
 /* Hover effect on slide show buttons */
 .Previous:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Makes the background of the arrows a transparent gray color */
-    color: white; /* Makes the arrows white when hovered over */
+    color:#AFEEEE; /* Makes the arrows white when hovered over */
 }
 
 /* Slideshow text */
 .text {
-    color: white; 
+    color:#AFEEEE; 
     padding: 1vw;
     position: absolute; /* This ensures the text is positioned within the image */
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'fuggles', cursive;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
-    font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
+    font-size: 3vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
     font-weight: bold;
     border-radius: 0px 0px 7px 7px; /* Gives the text background rounded corners on the bottom left and right corners */
@@ -291,7 +312,7 @@ footer {
     height: 1vw; /* The dots are sized relative to the viewport width */
     width: 1vw;
     margin: .25vw; /* adds additional spacing between the dots */ 
-    background-color: white; /* Makes the dots white */
+    background-color:#AFEEEE; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
@@ -300,7 +321,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-    background-color: black; /* Sets the color of the dots when active or hovered over */
+    background-color:#4d4d4d; /* Sets the color of the dots when active or hovered over */
 }
 
 /* Fading animation for slideshow */
@@ -386,7 +407,7 @@ footer {
 
 /* Styling for the contact form */
 .form-popup {
-    border: 3px solid #f0f1f0; /* Creates a solid light gray border around the contact form */
+    border: 3px solid #6495ED; /* Creates a solid light gray border around the contact form */
     z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page */
     display: none; /* Set the display to none, we will use JavaScript to show the contact form */
     position: fixed; /* The form stays in the same location no matter what */
@@ -407,13 +428,14 @@ footer {
     padding: .93vw; /* Adds padding to the input boxes */
     margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
     border: none; /* Removes the border from the input boxes */
-    background: Gainsboro; /* Sets the background color of the input boxes */
+    background: #FFD700; /* Sets the background color of the input boxes */
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
+    
 }
 
 /* General styling for all buttons */
 button {
-    font-family: "Trebuchet MS", Optima;
+    font-family: 'Zen Loop', cursive, Optima;
     letter-spacing: .3vw; /* Adds slight spacing between the letters */
     font-size: 1.5vw; /* Relative sizing of text */
     font-weight: bold; 
@@ -429,14 +451,14 @@ button:hover, .form-container .btn:hover {
     background-color: black; /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border turns silver when the button is hovered over */
+    border-color:#FFD700; /* The border turns silver when the button is hovered over */
 }
 
 /* Submit button */
 .form-container .btn {
     background-color: #6495ED; 
     color: black;
-    border-color: black;
+    border-color:#FFD700;
     margin-bottom: 1vh; /* Adds space between the submit button and the close button */
 }
 
@@ -450,7 +472,7 @@ button:hover, .form-container .btn:hover {
 /* Styling for close button on hover */
 .form-container .cancel:hover {
     color: white;
-    background-color: coral;
+    background-color: #FFD700;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: black;
