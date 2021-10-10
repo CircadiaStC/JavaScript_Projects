@@ -1,5 +1,5 @@
 # Javascript_Projects
-These are some small projects I made using JavaScript.
+These are some small projects I made using JavaScript and featuring some CSS animations using keyframes.
 
 # Projects
 -Pizza Menu
@@ -15,7 +15,6 @@ The classic game of tic-tac-toe with a Star Trek theme. It randomly selects whic
 and then users are off playing the game. Users can decide which token each player wants to use and the winner celebrated.
 
 # Calculator
-
 A basic four function calculaor. Users can add, subtract, multiply, and divide on a sleek web version of a calculator.
 
 
